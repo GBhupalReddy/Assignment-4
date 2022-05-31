@@ -7,10 +7,10 @@ li{
 }
 nav ul{
     display: flex;
-    padding: 3% 0px 2% 40%;
+    padding: 3% 0px 2% 35%;
 }
 nav ul li{
-   padding-left: 8%;
+   padding-left: 9%;
 }
 .logoimage{
     position: absolute;
@@ -33,7 +33,7 @@ header{
 }
 .header-image img{
     width: 100%;
-    height: 430px;
+    height: 443px;
 }
 .header-content{
     width: 25%;
@@ -43,7 +43,7 @@ header{
     padding: 40px 0px 0px 40px;
 }
 header .h5{
-    font-size: 280%;
+    font-size: 250%;
     padding: 20px 0px;
 }
 header button{
@@ -54,7 +54,7 @@ header button{
 }
 main{
     background-color: rgb(246, 246, 246);
-    margin-top: -4px;
+    margin-top: -5px;
     padding: 50px;
 }
 .ourrecipes{
@@ -65,17 +65,17 @@ main{
     display: flex;
 }
 .filter-recipe{
-    width: 22.6%;
+    width: 24%;
     background-color: #fa5650;
     padding: 20px 10px 0px 10px;
     color: white;
 }
 .filter-search{
     display: flex;
-    margin:20px 0px 20px 23px;
+    margin:20px 0px 20px 10px;
 }
 .filter-search p{
-    margin-left: 640px;
+    margin-left: 550px;
 }
 .filter-search select{
     padding: 5px;
@@ -111,24 +111,23 @@ main{
 .column1{
     width: 24%;
     margin-right: 20px;
-    /* background-color: white; */
 }
 .column4{
     width: 24%;
-    /* background-color: white; */
 }
 .column1 img, .column4 img{
     width: 100%;
     height: 250px;
 }
 .recipeitem{
-    padding: 20px 20px;
+    padding: 20px 10px;
     height: 120px;
+    background-color: white;
     
 }
 .recipeitem-name{
     padding-top: 20px;
-    font-size: 170%;
+    font-size: 160%;
 }
 span{
     float: right;
@@ -159,11 +158,11 @@ span{
     background-color: #fa5650;
     border: 2px solid #fa5650;
     color: white;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .reference input{
     margin: 10px 40px 10px 0px;
-    padding: 7px 120px 7px 0px;
+    padding: 7px 90px 7px 0px;
 }
 .addfriend{
     padding: 30px 0px;
@@ -174,7 +173,7 @@ span{
     background-color: #fa5650;
     border: 1px solid white;
     color: white;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .send{
     margin-left: 580px;
