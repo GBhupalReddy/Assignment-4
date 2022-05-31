@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
 }
@@ -8,22 +7,22 @@ li{
 }
 nav ul{
     display: flex;
-    margin: 30px 0px 20px 600px;
+    padding: 3% 0px 2% 40%;
 }
 nav ul li{
-    margin-right: 70px;
+   padding-left: 8%;
 }
 .logoimage{
     position: absolute;
-    top: 10px;
-    left: 100px;
+    top: 4%;
+    left: 7%;
     border-radius: 100%;
     width: 6%;
 }
 .logo-paragraph{
     position: absolute;
-    top: 30px;
-    left: 200px;
+    top: 6%;
+    left: 15%;
     color: #fa5650;
 }
 header{
@@ -58,14 +57,17 @@ main{
     margin-top: -4px;
     padding: 50px;
 }
+.ourrecipes{
+    font-size: 170%;
+    padding-bottom: 40px;
+}
 .filter{
     display: flex;
-    
 }
 .filter-recipe{
-    width: 24.2%;
+    width: 22.6%;
     background-color: #fa5650;
-    padding: 20px 0px 0px 10px;
+    padding: 20px 10px 0px 10px;
     color: white;
 }
 .filter-search{
@@ -84,14 +86,13 @@ main{
     background-color: #fa5650;
     padding: 20px 10px;
     color: white;
-    
 }
 .selectrecipes ul li{
     padding: 5px 0px;
 }
 .foddtype, .nationaltity, .nationaltity1{
     width: 24%;
-    margin-right: 20px;
+    margin-right: 23px;
 }
 .nationaltity2
 {
@@ -102,7 +103,6 @@ main{
 }
 .foddtype{
     border-right: 1px solid white;
-
 }
 .row1, .row2, .row3{
     display: flex;
@@ -111,22 +111,112 @@ main{
 .column1{
     width: 24%;
     margin-right: 20px;
-    background-color: white;
+    /* background-color: white; */
 }
 .column4{
     width: 24%;
-    background-color: white;
+    /* background-color: white; */
 }
 .column1 img, .column4 img{
     width: 100%;
     height: 250px;
 }
+.recipeitem{
+    padding: 20px 20px;
+    height: 120px;
+    
+}
+.recipeitem-name{
+    padding-top: 20px;
+    font-size: 170%;
+}
+span{
+    float: right;
+}
+.return
+{
+    color: #fa5650;
+    padding-top: 30px;;
+}
 .reference{
     background-color: #fa5650;
-    padding: 40px 50px 0px;
+    padding: 40px 50px;
     color: white;
+}
+.reference .heading{
+    font-size: 200%;
+    padding-bottom: 10px;
 }
 .remove, .addfriend
 {
     display: flex;
+}
+.remove{
+    border-bottom: 1px solid white;
+    padding: 30px 0px;
+}
+.remove button{
+    background-color: #fa5650;
+    border: 2px solid #fa5650;
+    color: white;
+    margin-left: 80px;
+}
+.reference input{
+    margin: 10px 40px 10px 0px;
+    padding: 7px 120px 7px 0px;
+}
+.addfriend{
+    padding: 30px 0px;
+}
+.addfriend button{
+    margin: 30px 0px 20px;
+    padding: 7px 30px;
+    background-color: #fa5650;
+    border: 1px solid white;
+    color: white;
+    margin-left: 80px;
+}
+.send{
+    margin-left: 580px;
+    padding: 7px 40px;
+    background-color: white;
+    border: 1px solid white;
+}
+.history
+{
+    background-color: rgb(246, 246, 246);
+    padding:  50px;
+    display: flex;
+}
+.head{
+    font-size: 150%;
+    padding-bottom: 20px;
+}
+.reccipestest
+{
+    width: 15%;
+    margin-right: 3%;
+}
+.grilled{
+    width: 18%;
+    margin-right: 3%;
+}
+.tips{
+    width: 14%;
+    margin-right: 3%;
+}
+.help{
+    width: 16%;
+    margin-right: 7%;
+}
+.thegrilled{
+    width: 24%;
+}
+.history a{
+    text-decoration: none;
+    color: #fa5650;
+    margin-top: 20px;
+}
+.about{
+    margin: 20px 0px;
 }
