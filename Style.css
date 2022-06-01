@@ -7,17 +7,17 @@ li{
 }
 nav ul{
     display: flex;
-    padding: 3% 0px 2% 35%;
+    padding: 2% 0px 1.5% 35%;
 }
 nav ul li{
    padding-left: 9%;
 }
 .logoimage{
     position: absolute;
-    top: 4%;
+    top: 2%;
     left: 7%;
     border-radius: 100%;
-    width: 6%;
+    width: 7%;
 }
 .logo-paragraph{
     position: absolute;
@@ -65,7 +65,7 @@ main{
     display: flex;
 }
 .filter-recipe{
-    width: 24%;
+    width: 22.3%;
     background-color: #fa5650;
     padding: 20px 10px 0px 10px;
     color: white;
@@ -87,12 +87,44 @@ main{
     padding: 20px 10px;
     color: white;
 }
-.selectrecipes ul li{
+.rounded-check, .checkbox-continer{
     padding: 5px 0px;
+   
 }
 .foddtype, .nationaltity, .nationaltity1{
     width: 24%;
     margin-right: 23px;
+}
+.checkbox-continer{
+    display: flex;
+    align-items: center;
+}
+.checkbox-continer label{
+    cursor: pointer;
+    display: flex;
+}
+.checkbox-continer input[type='checkbox']{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    margin-top: 10px;
+}
+.checkbox-continer label::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-right: .5em;
+    border: .05em solid #fff;
+    background-color: #fff;
+}
+.checkbox-continer input[type='checkbox']:checked + label::before {
+    content: '\002714';
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 .nationaltity2
 {
@@ -120,14 +152,14 @@ main{
     height: 250px;
 }
 .recipeitem{
-    padding: 20px 10px;
+    padding: 10px 10px;
     height: 120px;
     background-color: white;
     
 }
 .recipeitem-name{
     padding-top: 20px;
-    font-size: 160%;
+    font-size: 150%;
 }
 span{
     float: right;
@@ -158,11 +190,12 @@ span{
     background-color: #fa5650;
     border: 2px solid #fa5650;
     color: white;
-    margin-left: 70px;
+    margin-left: 60px;
+    margin-top: 15px;
 }
 .reference input{
-    margin: 10px 40px 10px 0px;
-    padding: 7px 90px 7px 0px;
+    margin: 10px 50px 10px 0px;
+    padding: 7px 85px 7px 5px;
 }
 .addfriend{
     padding: 30px 0px;
@@ -173,10 +206,10 @@ span{
     background-color: #fa5650;
     border: 1px solid white;
     color: white;
-    margin-left: 70px;
+    margin-left: 40px;
 }
 .send{
-    margin-left: 580px;
+    margin-left: 540px;
     padding: 7px 40px;
     background-color: white;
     border: 1px solid white;
@@ -197,12 +230,12 @@ span{
     margin-right: 3%;
 }
 .grilled{
-    width: 18%;
-    margin-right: 3%;
+    width: 20%;
+    margin-right: 1%;
 }
 .tips{
-    width: 14%;
-    margin-right: 3%;
+    width: 16%;
+    margin-right: 2%;
 }
 .help{
     width: 16%;
