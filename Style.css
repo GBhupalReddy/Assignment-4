@@ -52,6 +52,7 @@ header button{
     background-color: white;
     border: 2px solid white;
     margin-top: 20px;
+    border-radius: 3px;
 }
 .main1{
     background-color: rgb(246, 246, 246);
@@ -70,26 +71,33 @@ header button{
     background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
     color: rgb(253, 243, 241);
+    border-radius: 3px;
 }
 .filter-search{
     display: flex;
     margin:20px 0px 20px 20px;
 }
 .filter-search form{
-    margin-left: 540px;
-    margin-right: -30px;
+    margin-left: 550px;
 }
 .filter-search form input{
     background-color: rgb(246, 246, 246);
     border: none;
-    padding: 10px 30px 10px 10px;
+    padding: 10px -30px 10px 40px;
 }
+.filter-search form input::placeholder{
+    color: black;
+}
+.filter-search form input[typr=search]:focus {
+    outline: none;
+    }
 .filter-search select{
     padding: 5px;
     margin-left: 10px;
     border: 2px solid rgb(26, 34, 44);
     color: black;
     background-color: white;
+    border-radius: 3px;
 }
  .selectrecipes{
     display: flex;
@@ -161,7 +169,7 @@ header button{
     height: 250px;
 }
 .recipeitem{
-    padding: 10px 10px;
+    padding: 20px;
     height: 100px;
     background-color: white;
 }
