@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 li{
     list-style: none;
 }
 nav ul{
     display: flex;
-    padding: 2% 0px 1.5% 35%;
+    padding: 2% 0px 1.5% 37%;
+    color: rgb(98, 98, 98);
 }
 nav ul li{
    padding-left: 9%;
@@ -23,7 +25,7 @@ nav ul li{
     position: absolute;
     top: 4.5%;
     left: 15%;
-    color: #fa5650;
+    color: rgb(234, 71, 76);
 }
 header{
     display: flex;
@@ -37,13 +39,12 @@ header{
 }
 .header-content{
     width: 25%;
-    background-color: #fa5650;
-    color: white;
+    background-color: rgb(234, 71, 76);
+    color: rgb(253, 243, 241);
     margin-bottom: 4px;
     padding: 40px 0px 0px 40px;
 }
-header .h5{
-    font-size: 250%;
+h1{
     padding: 20px 0px;
 }
 header button{
@@ -52,55 +53,46 @@ header button{
     border: 2px solid white;
     margin-top: 20px;
 }
-/* body, html{
-    box-sizing: border-box;
-} */
 .main1{
     background-color: rgb(246, 246, 246);
     margin-top: -5px;
-    /* padding: 50px; */
-}
-article
-{
-    padding: 50px 50px 0px;
-}
-section
-{
-    padding: 0px 50px 50px 50px  ;
+    padding: 5%;
 }
 .ourrecipes{
-    font-size: 170%;
     padding-bottom: 40px;
+    color: rgb(70, 70, 70);
 }
 .filter{
     display: flex;
 }
 .filter-recipe{
     width: 22.3%;
-    background-color: #fa5650;
+    background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
-    color: white;
+    color: rgb(253, 243, 241);
 }
 .filter-search{
     display: flex;
     margin:20px 0px 20px 20px;
 }
 .filter-search p{
-    margin-left: 630px;
+    margin-left: 620px;
 }
 .filter-search select{
     padding: 5px;
     margin-left: 10px;
+    border: 2px solid rgb(26, 34, 44);
+    color: black;
+    background-color: white;
 }
  .selectrecipes{
     display: flex;
-    background-color: #fa5650;
+    background-color: rgb(234, 71, 76);
     padding: 20px 10px;
-    color: white;
+    color: rgb(253, 243, 241);
 }
 .rounded-check, .checkbox-continer{
     padding: 5px 0px;
-   
 }
 .foddtype, .nationaltity, .nationaltity1{
     width: 24%;
@@ -164,29 +156,30 @@ section
 }
 .recipeitem{
     padding: 10px 10px;
-    height: 120px;
+    height: 110px;
     background-color: white;
-    
 }
 .recipeitem-name{
     padding-top: 20px;
-    font-size: 150%;
+    color: #505050;  
 }
 span{
     float: right;
 }
+.recipeitem p{
+    color: rgb(81, 81, 81);
+}
 .return
 {
-    color: #fa5650;
+    color: rgb(234, 71, 76);
     padding-top: 30px;;
 }
 .reference{
-    background-color: #fa5650;
-    padding: 40px 50px;
-    color: white;
+    background-color: rgb(234, 71, 76);
+    padding: 40px 5%;
+    color: rgb(253, 243, 241);
 }
 .reference .heading{
-    font-size: 200%;
     padding-bottom: 10px;
 }
 .remove, .addfriend
@@ -198,15 +191,15 @@ span{
     padding: 30px 0px;
 }
 .remove button{
-    background-color: #fa5650;
-    border: 2px solid #fa5650;
-    color: white;
+    background-color: rgb(234, 71, 76);
+    border: 2px solid rgb(234, 71, 76);
+    color: rgb(253, 243, 241);
     margin-left: 110px;
     margin-top: 15px;
 }
 .reference input{
     margin: 10px 30px 10px 0px;
-    padding: 7px 120px 7px 5px;
+    padding: 7px 100px 7px 5px;
 }
 .addfriend{
     padding: 30px 0px;
@@ -214,26 +207,27 @@ span{
 .addfriend button{
     margin: 30px 0px 20px;
     padding: 7px 30px;
-    background-color: #fa5650;
-    border: 1px solid white;
-    color: white;
-    margin-left: 100px;
+    background-color: rgb(234, 71, 76);
+    border: 1px solid rgb(253, 243, 241);
+    color: rgb(253, 243, 241);
+    margin-left: 90px;
 }
 .send{
     margin-left: 540px;
     padding: 7px 40px;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid rgb(253, 243, 241);
 }
 .history
 {
     background-color: rgb(246, 246, 246);
     padding:  50px;
     display: flex;
+    color: rgb(98, 98, 98);
 }
 .head{
-    font-size: 150%;
     padding-bottom: 20px;
+    color: rgb(98, 98, 98);
 }
 .reccipestest
 {
@@ -257,7 +251,7 @@ span{
 }
 .history a{
     text-decoration: none;
-    color: #fa5650;
+    color: rgb(234, 71, 76);
     margin-top: 20px;
 }
 .about{
