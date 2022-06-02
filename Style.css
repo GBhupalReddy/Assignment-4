@@ -71,24 +71,26 @@ header button{
     background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
     color: rgb(253, 243, 241);
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
 .filter-search{
     display: flex;
     margin:20px 0px 20px 20px;
 }
-.filter-search form{
-    margin-left: 550px;
+.filter-search div{
+    position: relative;
+    left: 620px;
 }
-.filter-search form input{
+.filter-search input{
     background-color: rgb(246, 246, 246);
     border: none;
     padding: 10px -30px 10px 40px;
 }
-.filter-search form input::placeholder{
+.filter-search  input::placeholder{
     color: black;
+    font-size: 120%;
 }
-.filter-search form input[typr=search]:focus {
+.filter-search input:focus {
     outline: none;
     }
 .filter-search select{
