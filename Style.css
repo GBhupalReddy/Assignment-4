@@ -8,36 +8,37 @@ li{
 }
 nav ul{
     display: flex;
-    padding: 2% 0px 1.5% 37%;
+    padding: 1.7em 0em 1em 30em;
     color: rgb(98, 98, 98);
 }
 nav ul li{
-   padding-left: 9%;
+   padding-left: 4.5em;
+   font-size: 1em;
 }
 .logoimage{
     position: absolute;
-    top: 2%;
-    left: 7%;
+    top: 0.6em;
+    left: 6em;
     border-radius: 100%;
-    width: 7%;
+    width: 6em;
 }
 .logo-paragraph{
     position: absolute;
-    top: 4.5%;
-    left: 15%;
+    top: 1.7em;
+    left: 14em;
     color: rgb(234, 71, 76);
 }
-header{
+.Banner{
     display: flex;
 }
-.header-image{
+.Banner-image{
     width: 75%;
 }
-.header-image img{
+.Banner-image img{
     width: 100%;
     height: 443px;
 }
-.header-content{
+.Banner-content{
     width: 25%;
     background-color: rgb(234, 71, 76);
     color: rgb(253, 243, 241);
@@ -47,7 +48,7 @@ header{
 h1{
     padding: 20px 0px;
 }
-header button{
+.Banner button{
     padding: 10px 15px;
     background-color: white;
     border: 2px solid white;
@@ -57,10 +58,10 @@ header button{
 .main1{
     background-color: rgb(246, 246, 246);
     margin-top: -5px;
-    padding: 5%;
+    padding: 4em;
 }
 .ourrecipes{
-    padding-bottom: 40px;
+    padding-bottom: 2em;
     color: rgb(70, 70, 70);
 }
 .filter{
@@ -71,7 +72,6 @@ header button{
     background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
     color: rgb(253, 243, 241);
-    /* border-radius: 3px; */
 }
 .filter-search{
     display: flex;
@@ -79,16 +79,15 @@ header button{
 }
 .filter-search div{
     position: relative;
-    left: 650px;
+    left: 37.7em;
 }
 .filter-search input{
     background-color: rgb(246, 246, 246);
     border: none;
-    padding: 10px -30px 10px 40px;
 }
 .filter-search  input::placeholder{
     color: black;
-    font-size: 120%;
+    font-size: 1.2em;
 }
 .filter-search input:focus {
     outline: none;
@@ -110,7 +109,7 @@ header button{
 .rounded-check, .checkbox-continer{
     padding: 5px 0px;
 }
-.foddtype, .nationaltity, .nationaltity1{
+.foodtype, .nationaltity, .nationaltity1{
     width: 24%;
     margin-right: 23px;
 }
@@ -247,7 +246,7 @@ outline: none;
 .history
 {
     background-color: rgb(246, 246, 246);
-    padding:  50px;
+    padding:  4em;
     display: flex;
     color: rgb(98, 98, 98);
 }
