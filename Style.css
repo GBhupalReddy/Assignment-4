@@ -28,17 +28,17 @@ nav ul li{
     left: 14em;
     color: rgb(234, 71, 76);
 }
-.Banner{
+.banner{
     display: flex;
 }
-.Banner-image{
+.banner-image{
     width: 75%;
 }
-.Banner-image img{
+.banner-image img{
     width: 100%;
     height: 443px;
 }
-.Banner-content{
+.banner-content{
     width: 25%;
     background-color: rgb(234, 71, 76);
     color: rgb(253, 243, 241);
@@ -48,7 +48,7 @@ nav ul li{
 h1{
     padding: 20px 0px;
 }
-.Banner button{
+.banner button{
     padding: 10px 15px;
     background-color: white;
     border: 2px solid white;
@@ -68,7 +68,7 @@ h1{
     display: flex;
 }
 .filter-recipe{
-    width: 22.3%;
+    width: 22%;
     background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
     color: rgb(253, 243, 241);
@@ -79,7 +79,7 @@ h1{
 }
 .filter-search div{
     position: relative;
-    left: 37.7em;
+    left: 39em;
 }
 .filter-search input{
     background-color: rgb(246, 246, 246);
@@ -106,28 +106,28 @@ h1{
     padding: 20px 10px;
     color: rgb(253, 243, 241);
 }
-.rounded-check, .checkbox-continer{
+.rounded-check, .checkbox-container{
     padding: 5px 0px;
 }
-.foodtype, .nationaltity, .nationaltity1{
-    width: 24%;
-    margin-right: 23px;
+.foodtype, .nationality, .nationality1{
+    width: 23%;
+    margin-right: 28px;
 }
-.checkbox-continer{
+.checkbox-container{
     display: flex;
     align-items: center;
 }
-.checkbox-continer label{
+.checkbox-container label{
     cursor: pointer;
     display: flex;
 }
-.checkbox-continer input[type='checkbox']{
+.checkbox-container input[type='checkbox']{
     cursor: pointer;
     opacity: 0;
     position: absolute;
     margin-top: 10px;
 }
-.checkbox-continer label::before{
+.checkbox-container label::before{
     content: '';
     width: 1em;
     height: 1em;
@@ -136,7 +136,7 @@ h1{
     border: .05em solid #fff;
     background-color: #fff;
 }
-.checkbox-continer input[type='checkbox']:checked + label::before {
+.checkbox-container input[type='checkbox']:checked + label::before {
     content: '\002714';
     background-color: #fff;
     display: flex;
@@ -148,10 +148,10 @@ h1{
 {
     width: 24%;
 }
-.nationaltity1, .nationaltity2{
+.nationality1, .nationality2{
     padding-top: 30px;
 }
-.foddtype{
+.foodtype{
     border-right: 1px solid white;
 }
 .row1, .row2, .row3{
