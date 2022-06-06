@@ -79,7 +79,7 @@ h1{
 }
 .filter-search div{
     position: relative;
-    left: 39em;
+    left: 39.5em;
 }
 .filter-search input{
     background-color: rgb(246, 246, 246);
@@ -149,7 +149,7 @@ h1{
     width: 24%;
 }
 .nationality1, .nationality2{
-    padding-top: 30px;
+    padding-top: 23px;
 }
 .foodtype{
     border-right: 1px solid white;
