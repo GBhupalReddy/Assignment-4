@@ -6,26 +6,33 @@
 li{
     list-style: none;
 }
+header{
+    display: flex;
+}
 nav ul{
     display: flex;
-    padding: 1.7em 0em 1em 30em;
-    color: rgb(98, 98, 98);
+    width: 70;
+    padding: 1.7em 0em 1em 7em;
+    color: rgb(98, 98, 98); 
 }
 nav ul li{
-   padding-left: 4.5em;
+   padding-left: 3em;
    font-size: 1em;
 }
+.logo{
+    display: flex;
+    width: 28%;
+    padding-left: 6em;
+}
 .logoimage{
-    position: absolute;
+    position: absolute; 
     top: 0.6em;
-    left: 6em;
+    left: 6em; 
     border-radius: 100%;
     width: 6em;
 }
 .logo-paragraph{
-    position: absolute;
-    top: 1.7em;
-    left: 14em;
+    padding: 1.7em 0em 1em 7em;
     color: rgb(234, 71, 76);
 }
 .banner{
