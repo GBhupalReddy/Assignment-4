@@ -9,30 +9,45 @@ li{
 header{
     display: flex;
 }
-nav ul{
+header nav{
+    width: 60%;
+    padding: 0;
+}
+header nav ul{
+    width: 100%;
     display: flex;
-    width: 70;
-    padding: 1.7em 0em 1em 7em;
+    margin: 1.7em 0% 1em 0%;
     color: rgb(98, 98, 98); 
+    text-align: center;
 }
 nav ul li{
-   padding-left: 3em;
+    width: 14%;
    font-size: 1em;
 }
+nav ul .li1, nav ul .li2{
+    width: 16%;
+}
+nav ul .li3
+{
+    width: 30%;
+}
+nav ul .li4{
+    width: 30%;
+}
 .logo{
-    display: flex;
-    width: 28%;
-    padding-left: 6em;
+    /* display: flex; */
+    width: 39%;
+    /* padding-left: 6em; */
 }
 .logoimage{
     position: absolute; 
     top: 0.6em;
-    left: 6em; 
+    left: 5%; 
     border-radius: 100%;
     width: 6em;
 }
 .logo-paragraph{
-    padding: 1.7em 0em 1em 7em;
+    padding: 1.7em 0em 1em 15em;
     color: rgb(234, 71, 76);
 }
 .banner{
@@ -50,7 +65,7 @@ nav ul li{
     background-color: rgb(234, 71, 76);
     color: rgb(253, 243, 241);
     margin-bottom: 4px;
-    padding: 40px 0px 0px 40px;
+    padding: 40px 4% 0px 40px;
 }
 h1{
     padding: 20px 0px;
@@ -65,7 +80,7 @@ h1{
 .main1{
     background-color: rgb(246, 246, 246);
     margin-top: -5px;
-    padding: 4em;
+    padding: 5%;
 }
 .ourrecipes{
     padding-bottom: 2em;
@@ -82,21 +97,27 @@ h1{
 }
 .filter-search{
     display: flex;
+    width: 55%;
     margin:20px 0px 20px 20px;
 }
-.filter-search div{
-    position: relative;
-    left: 39.5em;
+.recipe-search{
+    /* position: relative;
+    left: 8%; */
+    margin:20px 0px 20px 4%;
+    float: right;
+    text-align: right;
+    width: 30%;
 }
-.filter-search input{
+.recipe-search input{
     background-color: rgb(246, 246, 246);
     border: none;
+    margin-right: -15px;
 }
-.filter-search  input::placeholder{
+.recipe-search  input::placeholder{
     color: black;
     font-size: 1.2em;
 }
-.filter-search input:focus {
+.recipe-search input:focus {
     outline: none;
     }
 .filter-search select{
@@ -118,7 +139,7 @@ h1{
 }
 .foodtype, .nationality, .nationality1{
     width: 23%;
-    margin-right: 28px;
+    margin-right: 2.2%;
 }
 .checkbox-container{
     display: flex;
@@ -167,7 +188,7 @@ h1{
 }
 .column1{
     width: 24%;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 .column4{
     width: 24%;
@@ -235,8 +256,8 @@ outline: none;
     padding: 30px 0px;
 }
 .addfriend button{
-    margin: 30px 0px 20px;
-    padding: 7px 30px;
+    margin: 2% 0px 1.5%;
+    padding: 0.5% 2%;
     background-color: rgb(234, 71, 76);
     border: 1px solid rgb(253, 243, 241);
     color: rgb(253, 243, 241);
@@ -244,7 +265,7 @@ outline: none;
     border-radius: 3px;
 }
 .send{
-    margin-left: 540px;
+    margin-left: ;
     padding: 7px 40px;
     background-color: white;
     border: 1px solid rgb(253, 243, 241);
@@ -253,7 +274,7 @@ outline: none;
 .history
 {
     background-color: rgb(246, 246, 246);
-    padding:  4em;
+    padding:  5%;
     display: flex;
     color: rgb(98, 98, 98);
 }
