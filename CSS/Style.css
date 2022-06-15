@@ -332,12 +332,12 @@ outline: none;
     .logoimage{
         border-radius: 100%;
         width: 15%;
-        margin: 1em 2em;
+        margin: 1em 0 1.5em 17em;
     }
     .logo-paragraph{
         color: rgb(234, 71, 76);
         float: right;
-        margin: 3em 0 0 28em;
+        margin: 3.8em 0 0 3em;
     }
     nav ul{
         display: flex;
@@ -664,7 +664,7 @@ section{
     background-color: rgb(234, 71, 76);
     border: 2px solid rgb(234, 71, 76);
     color: rgb(253, 243, 241);
-    margin-top: 15px;
+    margin: 15px 0 0 34%;
 }
 .reference input{
     padding: 7px 20px 7px 5px;
@@ -691,13 +691,14 @@ outline: none;
     border: 1px solid rgb(253, 243, 241);
     color: rgb(253, 243, 241);
     border-radius: 3px;
-    margin-top: 10px;
+    margin: 10px 0 0 23%;
 }
 .send{
-    padding: 7px 40px;
+    padding: 7px 42px;
     background-color: white;
     border: 1px solid rgb(253, 243, 241);
     border-radius: 3px;
+    margin-left: 23%;
 }
 .history
 {
