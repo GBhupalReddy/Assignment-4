@@ -3,9 +3,46 @@
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
+body {
+    font-size: 100%;
+  }
+  
 li{
     list-style: none;
 }
+.checkbox-container{
+    display: flex;
+    align-items: center;
+}
+.checkbox-container label{
+    cursor: pointer;
+    display: flex;
+}
+.checkbox-container input[type='checkbox']{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    margin-top: 10px;
+}
+.checkbox-container label::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-right: .5em;
+    border: .05em solid #fff;
+    background-color: #fff;
+}
+.checkbox-container input[type='checkbox']:checked + label::before {
+    content: '\002714';
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+@media only screen and (min-width: 993px)
+  {
 header{
     display: flex;
 }
@@ -21,7 +58,6 @@ header nav ul{
     text-align: center;
 }
 nav ul li{
-    width: 14%;
    font-size: 1em;
 }
 nav ul .li1, nav ul .li2{
@@ -31,13 +67,8 @@ nav ul .li3
 {
     width: 30%;
 }
-nav ul .li4{
-    width: 30%;
-}
 .logo{
-    /* display: flex; */
     width: 39%;
-    /* padding-left: 6em; */
 }
 .logoimage{
     position: absolute; 
@@ -90,7 +121,7 @@ h1{
     display: flex;
 }
 .filter-recipe{
-    width: 22%;
+    width: 26.45%;
     background-color: rgb(234, 71, 76);
     padding: 20px 10px 0px 10px;
     color: rgb(253, 243, 241);
@@ -101,8 +132,6 @@ h1{
     margin:20px 0px 20px 20px;
 }
 .recipe-search{
-    /* position: relative;
-    left: 8%; */
     margin:20px 0px 20px 4%;
     float: right;
     text-align: right;
@@ -134,47 +163,21 @@ h1{
     padding: 20px 10px;
     color: rgb(253, 243, 241);
 }
+.nationality-item{
+    display: flex;
+}
 .rounded-check, .checkbox-container{
     padding: 5px 0px;
 }
-.foodtype, .nationality, .nationality1{
+.foodtype{
     width: 23%;
-    margin-right: 2.2%;
+    margin-right: 2.6%;
 }
-.checkbox-container{
-    display: flex;
-    align-items: center;
+.nationality-item{
+   width: 76%
 }
-.checkbox-container label{
-    cursor: pointer;
-    display: flex;
-}
-.checkbox-container input[type='checkbox']{
-    cursor: pointer;
-    opacity: 0;
-    position: absolute;
-    margin-top: 10px;
-}
-.checkbox-container label::before{
-    content: '';
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    margin-right: .5em;
-    border: .05em solid #fff;
-    background-color: #fff;
-}
-.checkbox-container input[type='checkbox']:checked + label::before {
-    content: '\002714';
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-.nationaltity2
-{
-    width: 24%;
+.nationality-item .nationality, .nationality-item .nationality1{
+    width: 34.5%;
 }
 .nationality1, .nationality2{
     padding-top: 23px;
@@ -186,24 +189,24 @@ h1{
     display: flex;
     margin-top: 40PX;
 }
-.column1{
+.column1, .column2, .column3{
     width: 24%;
     margin-right: 2%;
 }
 .column4{
     width: 24%;
 }
-.column1 img, .column4 img{
+.column1 img, .column2 img, .column3 img, .column4 img{
     width: 100%;
     height: 250px;
 }
 .recipeitem{
-    padding: 20px;
+    padding: 15px;
     height: 100px;
     background-color: white;
 }
 .recipeitem-name{
-    padding-top: 20px;
+    padding-top: 10px;
     color: #505050;  
 }
 span{
@@ -211,6 +214,7 @@ span{
 }
 .recipeitem p{
     color: rgb(81, 81, 81);
+    font-size: 11px;
 }
 .return
 {
@@ -228,6 +232,7 @@ span{
 .remove, .addfriend
 {
     display: flex;
+    /* width: 100%; */
 }
 .remove{
     border-bottom: 1px solid white;
@@ -237,16 +242,24 @@ span{
     background-color: rgb(234, 71, 76);
     border: 2px solid rgb(234, 71, 76);
     color: rgb(253, 243, 241);
-    margin-left: 110px;
+    margin-left: 25px;
     margin-top: 15px;
 }
+ .name, .surname, .email{
+     margin-right: 50px;
+ }
 .reference input{
-    margin: 10px 30px 10px 0px;
-    padding: 7px 100px 7px 5px;
+   
+    padding: 7px 20px 7px 5px;
+    width: 90%;
+    margin: 10px 3% 10px 0px;
 }
 input[type=text], input[type=email]{
     border-radius: 3px;
     border: none;
+}
+.name, .surname, .email{
+ width: 23%;
 }
 input[type=text]:focus,
 input[type=email]:focus {
@@ -256,16 +269,16 @@ outline: none;
     padding: 30px 0px;
 }
 .addfriend button{
-    margin: 2% 0px 1.5%;
-    padding: 0.5% 2%;
+    margin: 28px 0px 10px;
+    padding: 6px 29px 4px;
     background-color: rgb(234, 71, 76);
     border: 1px solid rgb(253, 243, 241);
     color: rgb(253, 243, 241);
-    margin-left: 90px;
+    margin-left: 10px;
     border-radius: 3px;
 }
 .send{
-    margin-left: 540px;
+    margin-left: 45%;
     padding: 7px 40px;
     background-color: white;
     border: 1px solid rgb(253, 243, 241);
@@ -309,4 +322,394 @@ outline: none;
 }
 .about{
     margin: 20px 0px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px)
+{
+    .logo {
+        display: flex;
+    }
+    .logoimage{
+        border-radius: 100%;
+        width: 15%;
+        margin: 1em 2em;
+    }
+    .logo-paragraph{
+        color: rgb(234, 71, 76);
+        float: right;
+        margin: 3em 0 0 28em;
+    }
+    nav ul{
+        display: flex;
+       color: rgb(98, 98, 98); 
+        text-align: center;
+    }
+    nav ul .li1, nav ul .li2, nav ul .li3{
+        padding: 0 2.5em 1em 3.3em;
+    }
+    img{
+        width: 100%;
+    }
+    .banner-content{
+        background-color: rgb(234, 71, 76);
+        margin-top: -4px;
+        padding: 20px 5%;
+        color: rgb(253, 243, 241);
+    }
+    h1{
+        padding: 20px 0px;
+       }
+        .banner button{
+            padding: 10px 15px;
+            background-color: white;
+            border: 2px solid white;
+            margin: 20px 0;
+            border-radius: 3px;
+        }
+        .main1{
+            background-color: rgb(246, 246, 246);
+            margin-top: -5px;
+            padding: 5%;
+        }
+        .ourrecipes{
+            padding-bottom: 1em;
+            color: rgb(70, 70, 70);
+        }
+        .filter-recipe{
+            background-color: rgb(234, 71, 76);
+            padding: 5px 10px;
+        }
+        span{
+        float: right;
+        }
+        .filter-search{
+            display: flex;
+            padding:10px 0px 10px 5px;
+    }
+    .recipe-search{
+        float: right;
+        text-align: right;
+        margin-top: -35px;
+    } 
+    .recipe-search input{
+        background-color: rgb(246, 246, 246);
+        border: none;
+        margin-right: -15px;
+    }
+    .recipe-search  input::placeholder{
+        color: black;
+        font-size: 1.2em;
+    }
+    .recipe-search input:focus {
+        outline: none;
+        }
+    .filter-search select{
+        padding: 5px;
+        margin-left: 10px;
+        border: 2px solid rgb(26, 34, 44);
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+    }
+    .selectrecipes{
+        background-color: rgb(234, 71, 76);
+        padding: 20px 10px;
+        color: rgb(253, 243, 241);
+    }
+    .nationality-item{
+        display: flex;
+    }
+    .nationality{
+        margin-top: 10px;
+    }
+    .checkbox-container{
+        padding: 10px 0px 0px;
+    }
+    .nationality, .nationality1{
+        width: 40%;
+    }
+    .nationality1, .nationality2{
+        margin-top: 28px;
+    }
+    .column1, .column2, .column3, .column4{
+        display: inline-block;
+        width: 48%;
+        margin: 20px 0px;
+    }
+    section img{
+        height: 300px;
+    }  
+    .column1, .column3{
+        margin-right: 23px;
+    }
+    .recipeitem{
+        background-color: white;
+        padding: 10px 5px;
+       height: 60px;
+    }
+    .recipeitem-name{
+        padding-top: 4px;
+    }
+    .return{
+        color: rgb(234, 71, 76);
+    }
+    .reference{
+        background-color: rgb(234, 71, 76);
+        color: rgb(253, 243, 241);;
+        padding: 2em 5%;
+    }
+    .reference p{
+        margin: 10px 0;
+    }
+    .name, .surname{
+        display: inline-block;
+    }
+    .email, .remov button, .addfriend button{
+        display: inline-block;
+    }
+    .name, .surname, .email{
+        width: 49%;
+    }
+    .remove button{
+        background-color: rgb(234, 71, 76);
+        border: 2px solid rgb(234, 71, 76);
+        color: rgb(253, 243, 241);
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .reference input{
+        padding: 7px 20px 7px 5px;
+        width: 90%;
+        margin: 10px 3% 10px 0px;
+    }
+    input[type=text], input[type=email]{
+        border-radius: 3px;
+        border: none;
+    }
+    input[type=text]:focus,
+    input[type=email]:focus {
+    outline: none;
+    }
+    .remove{
+        border-bottom: 1px solid white;
+        padding: 30px 0px;
+    }
+    .addfriend{
+       margin-top: 30px; 
+    }
+    .addfriend button{
+        margin: 28px 0px 10px;
+        padding: 6px 29px 4px;
+        background-color: rgb(234, 71, 76);
+        border: 1px solid rgb(253, 243, 241);
+        color: rgb(253, 243, 241);
+        margin-left: 10px;
+        border-radius: 3px;
+    }
+    .send{
+        margin-left: 40%;
+        padding: 7px 40px;
+        background-color: white;
+        border: 1px solid rgb(253, 243, 241);
+        border-radius: 3px;
+        margin-top: 15px;
+    }
+    .history
+    {
+        background-color: rgb(246, 246, 246);
+        padding:  5%;
+        color: rgb(98, 98, 98);
+    }
+   .head{
+        padding: 10px 0 20px;
+        color: rgb(98, 98, 98);
+    }
+    .history a{
+        text-decoration: none;
+        color: rgb(234, 71, 76);
+        margin-top: 20px;
+    }
+    .about{
+        margin: 20px 0px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px)
+{
+    .logoimage{
+        border-radius: 100%;
+        width: 20%;
+        margin: 20px 37%;
+    }
+    .logo-paragraph{
+        text-align: center;
+        color: rgb(234, 71, 76);
+    }
+     nav ul{
+         display: block;
+         text-align: center;
+         margin-bottom: 10px;
+         color: rgb(98, 98, 98); 
+     }
+     nav ul li{
+       margin-top: 10px;
+     }
+    .banner{
+        display: block;
+    }
+    .banner .banner-image img{
+        width: 100%;
+    }
+    .banner-content{
+        background-color: rgb(234, 71, 76);
+        padding: 30px 20px;
+        margin-top: -4px;
+        color: rgb(253, 243, 241)
+    }
+    h1{
+        padding: 20px 0px;
+       }
+    .banner button{
+        padding: 10px 15px;
+        background-color: white;
+        border: 2px solid white;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+    img {
+        width: 100%;
+    }
+    .main1{
+        background-color: rgb(246, 246, 246);
+        margin-top: -5px;
+        padding: 5%;
+    }
+    .ourrecipes{
+        padding-bottom: 1em;
+        color: rgb(70, 70, 70);
+    }
+    .filter-recipe{
+        background-color: rgb(234, 71, 76);
+        padding: 3px 4px;
+    }
+    span{
+    float: right;
+    }
+    .filter-search{
+        display: flex;
+        padding:10px 0px 10px 5px;
+    }
+    .recipe-search{
+    float: right;
+    text-align: right;
+    margin-top: -35px;
+    } 
+.recipe-search input{
+    background-color: rgb(246, 246, 246);
+    border: none;
+    margin-right: -15px;
+}
+.recipe-search  input::placeholder{
+    color: black;
+    font-size: 1.2em;
+}
+.recipe-search input:focus {
+    outline: none;
+    }
+.filter-search select{
+    padding: 5px;
+    margin-left: 10px;
+    border: 2px solid rgb(26, 34, 44);
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+.selectrecipes{
+    background-color: rgb(234, 71, 76);
+    padding: 20px 10px;
+    color: rgb(253, 243, 241);
+}
+.nationality .rounded-check{
+    margin-top: 10px;
+}
+.checkbox-container{
+    padding: 10px 0px 0px;
+}
+section{
+    margin: 20px 0px;
+}
+.column1, .column4{
+    margin-bottom: 10px;
+}
+.recipeitem{
+    background-color: white;
+    padding: 10px 5px;
+}
+.return{
+    color: rgb(234, 71, 76);
+    margin-top: 30px;
+}
+.reference{
+    background-color: rgb(234, 71, 76);
+    padding: 5%;
+    color: rgb(253, 243, 241);
+}
+.reference p{
+    padding: 10px 0px;
+}
+.remove{
+    border-bottom: 1px solid white;
+    padding: 30px 0px;
+}
+.remove button{
+    background-color: rgb(234, 71, 76);
+    border: 2px solid rgb(234, 71, 76);
+    color: rgb(253, 243, 241);
+    margin-top: 15px;
+}
+.reference input{
+    padding: 7px 20px 7px 5px;
+    width: 90%;
+    margin: 10px 3% 10px 0px;
+}
+input[type=text], input[type=email]{
+    border-radius: 3px;
+    border: none;
+}
+.surname, .email{
+ margin-top: 10px;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+outline: none;
+}
+.addfriend{
+    padding: 30px 0px;
+}
+.addfriend button{
+    padding: 7px 40px ;
+    background-color: rgb(234, 71, 76);
+    border: 1px solid rgb(253, 243, 241);
+    color: rgb(253, 243, 241);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.send{
+    padding: 7px 40px;
+    background-color: white;
+    border: 1px solid rgb(253, 243, 241);
+    border-radius: 3px;
+}
+.history
+{
+    background-color: rgb(246, 246, 246);
+    padding:  5%;
+    color: rgb(98, 98, 98);
+}
+.history .head, .history p{
+    margin-bottom: 20px;
+}
+.history a{
+    color: rgb(234, 71, 76);
+    text-decoration: none;
+}
 }
