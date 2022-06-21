@@ -13,9 +13,12 @@
         <div class="logo">
             <img class="logoimage" src="/Image/logo.3.webp" alt="">
             <p class="logo-paragraph">The Grilled Prawn</p>
+            <div class="list-menu" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
        <nav>
-          <ul>
+          <ul id="list-item">
               <li class="li1">RECIPES</li>
               <li class="li2">DRINKS</li>
                <li class="li3">DECORATIONS</li>
@@ -52,7 +55,6 @@
                         <i class="fa fa-magnifying-glass"></i>
                         <input type="search" id="gsearch" name="gsearch" placeholder="search recipe" size="12">
                     </div>
-                    
                 </div>
                 <div class="selectrecipes">
                     <div class="foodtype">
@@ -237,7 +239,7 @@
             <h2 class="heading">Spread the word!</h2>
             <p>Our recipes are awesome, sing up to our newsletter and <br>
                invite frinds to join the Gilled Prawn cult</p>
-            <div class="remove">
+            <!-- <div class="remove">
                 <div class="name">
                     <label for="">Name</label><br>
                     <input type="text" placeholder="Samantha">
@@ -254,24 +256,31 @@
                 <button>
                     <i class="fa-solid fa-trash"></i>&nbsp;&nbsp; Remove
                 </button>
-            </div>
+            </div> -->
+            <form action="#" method="GET" id="form">
             <div class="addfriend">
-                <div class="name">
-                    <label for="">Name</label><br>
-                    <input type="text" placeholder="George">
-                </div>
-                <div class="surname">
-                    <label for="">Surname</label><br>
-                    <input type="text" placeholder="Stone">
-                </div>
-                <div class="email">
-                    <label for="">Email address</label><br>
-                    <input type="email" placeholder="george.stone@gmail.com">
-                </div>
-                    <button>Add Friend</button>
-                </div>
-                <button class="send">Send &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
-            </div>
+               
+                    <div class="name">
+                        <label for="">Name</label><br>
+                        <input type="text" placeholder="George" id="name">
+                    </div>
+                    <div class="surname">
+                        <label for="">Surname</label><br>
+                        <input type="text" placeholder="Stone" id="surname">
+                    </div>
+                    <div class="email">
+                        <label for="">Email address</label><br>
+                        <input type="email" placeholder="george.stone@gmail.com" id="email">
+                    </div>
+                    <div>
+                        <button class="add" type="submit">Add Friend</button>
+                    </div>
+            </div> 
+            </form>
+            <button class="send">Send &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
+                <table id="table">
+
+                </table>
         </div>
     </main>
     <footer>
@@ -302,5 +311,6 @@
             </div>
         </div>
     </footer>
+    <script  src="/JavaScript/Script.js"></script>
 </body>
 </html>
