@@ -1,9 +1,7 @@
 function mobilemenu(){
-
     if(document.getElementById('list-item').style.display == 'block'){
 
         document.getElementById('list-item').style.display = 'none';
-
     }else{
 
         document.getElementById('list-item').style.display = 'block';
@@ -38,7 +36,6 @@ function table() {
     </table>`;
     document.getElementById("table").innerHTML = table;
 };
-
 var form=document.getElementById("form");
 form.addEventListener("submit",store);
 details = [];
@@ -55,6 +52,33 @@ function getData(){
 function setData() {
     localStorage.setItem("details", JSON.stringify(details));
 };
+function validate(){
+    let isvalidTrue=true;
+    let name = document.getElementById("name");
+    let surname=document.getElementById("surname");
+    let email = document.getElementById("email");
+    if (name.value == "" || surname.value=="" || email.value=="") {
+      alert("please fill the details!");
+      return  isValidTrue=false;
+  }
+  else if( (!isNaN(name.value)) || (!isNaN(surname.value)) ){
+      alert("fields should not be numbers!");
+      return isValidTrue=false;
+  }
+  else if(name.value.length<3 || surname.value.length<3){
+    alert("minimum 3 characters needed");
+    return  isValidTrue=false;
+}
+else if(name.value.length>10 || surname.value.length>10){
+    alert("maximum 10 characters allowed");
+    return  isValidTrue=false;
+}
+else if((!(email.value).endsWith("@gmail.com")) && (!(email.value).endsWith("@qualminds.com"))){
+    alert("allow only gmail and qualminds emails");
+      return  isValidTrue=false;
+}
+return isvalidTrue;
+}
 function store(){
     let name = document.getElementById("name");
     let surname=document.getElementById("surname");
@@ -73,12 +97,15 @@ function store(){
         surname:surname.value,
         email: email.value
     };
+    if(validate())
+    {
     details.push(data);
     setData();
     table();
     name.value = "";
     surname.value="";
     email.value = "";
+    }
 }
 function deletFn(index){
     alert("delete");
@@ -89,19 +116,18 @@ function deletFn(index){
  function editFn(index){
     alert("edit");
     let editForm=`
-    
      <div class="contacts">
         <div class="name">
             <label>Name</label>
-            <input type="text" value="${details[index].name}" placeholder="Update Your Name" id="updatedName">
+            <input type="text" value="${details[index].name}" id="name">
         </div>
         <div class="surname">
             <label>Surame</label>
-            <input type="text" value="${details[index].surname}" placeholder="Update Your Surname" id="updatedSurname">
+            <input type="text" value="${details[index].surname}"  id="surname">
         </div>
         <div class="email">
             <label>Email address</label>
-            <input type="email" value="${details[index].email}" placeholder="Update Ypur Email" id="updatedEmail">
+            <input type="email" value="${details[index].email}" id="email">
         </div>
         <div class="button-div">
            <input type="submit" value="update Details" class="button1" onClick="update(${index})">
@@ -110,20 +136,38 @@ function deletFn(index){
     `;
     document.getElementById("form").innerHTML = editForm;
 }
-
 function update(index) {
-    let updatedName = document.getElementById("updatedName");
-    let updatedSurname=document.getElementById("updatedSurname");
-    let updatedEmail = document.getElementById("updatedEmail");
-
+    let name = document.getElementById("name");
+    let surname=document.getElementById("surname");
+    let email = document.getElementById("email");
     details[index] = {
-        name: updatedName.value,
-        surname:updatedSurname.value,
-        email: updatedEmail.value
+        name:name.value,
+        surname:surname.value,
+        email:email.value
     };
-    setData();
-    table();
-    document.getElementById("editForm").innerHTML = store();
+    let UpdateForm=`
+  <div class="addfriend" >
+        <div class="name">
+         <label>Name</label><br>
+         <input type="text" id="name" placeholder="George">
+        </div>
+        <div class="surname">
+            <label>Surname</label><br>
+            <input type="text" id="surname" placeholder="Stone">
+        </div>
+        <div class="email">
+            <label>Email address</label><br>
+            <input type="text" id="email" placeholder="george.stone@gmail.com">
+        </div>
+        <div class="add">
+            <button class="add" type="submit">Add Friend</button>
+        </div>
+    </div>
+    `;
+    if(validate())
+    {
+        setData();
+        table();
+    }
+    document.getElementById("form").innerHTML=UpdateForm;
 }
-
-F
