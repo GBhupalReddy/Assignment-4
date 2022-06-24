@@ -759,10 +759,13 @@ outline: none;
     padding: 5px 0;
     text-align: center;
 }
+.table1{
+    overflow-x: auto;
+}
 #table{
     width: 100%;
     /* margin: auto; */
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 .history
 {

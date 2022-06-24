@@ -52,6 +52,7 @@ function getData(){
 function setData() {
     localStorage.setItem("details", JSON.stringify(details));
 };
+var alphaExp = /^[a-zA-Z]+$/;
 function validate(){
     let isvalidTrue=true;
     let name = document.getElementById("name");
@@ -75,6 +76,10 @@ else if(name.value.length>10 || surname.value.length>10){
 }
 else if((!(email.value).endsWith("@gmail.com")) && (!(email.value).endsWith("@qualminds.com"))){
     alert("allow only gmail and qualminds emails");
+      return  isValidTrue=false;
+}
+else if(!(name.value.match(alphaExp)) || !(surname.value.match(alphaExp))){
+    alert("Name and SurName Take only alphabet characters ");
       return  isValidTrue=false;
 }
 return isvalidTrue;
@@ -114,7 +119,7 @@ function deletFn(index){
     table();
 }
  function editFn(index){
-    alert("edit");
+    alert(" edit ");
     let editForm=`
      <div class="contacts">
         <div class="name">
