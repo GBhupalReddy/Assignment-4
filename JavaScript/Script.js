@@ -69,16 +69,13 @@ function store(){
     };
     if(validate())
     {
-
       for(i=0;i<details.length;i++){
         if(details[i].email==email){
           errorMsg[2].textContent= "email allready exist";
           event.preventDefault();
             return false;
         }
-
     }
-
     details.push(data);
     setData();
     table();
@@ -119,12 +116,13 @@ function update(index) {
     if(validate())
     {
       for(i=0;i<details.length;i++){
+        if(index != i){
         if(details[i].email==email){
           errorMsg[2].textContent= "email allready exist";
           event.preventDefault();
             return false;
         }
-
+      }
     }
         setData();
         table();
@@ -136,7 +134,7 @@ function validate(){
     let name = document.getElementById("name");
     let surname=document.getElementById("surname");
     let email = document.getElementById("email");
-    
+    //First Name Validation
   if (name.value == "")
   {
     errorMsg[0].textContent = "*FirstName can't be empty";
@@ -160,10 +158,10 @@ function validate(){
   else{
     errorMsg[0].textContent ="";
   }
-
+ //SurName Validation
   if (surname.value == "")
   {
-    errorMsg[1].textContent = "*SurFirstname can't be empty";
+    errorMsg[1].textContent = "*Surname can't be empty";
     return false;
   }
   if(!(surname.value.match(alphaExp)))
@@ -184,7 +182,7 @@ function validate(){
   else{
     errorMsg[1].textContent ="";
   }
-
+ //Email Validation 
   if (email.value == "")
   {
     errorMsg[2].textContent = "*Email can't be empty";
@@ -198,6 +196,5 @@ function validate(){
   else{
     errorMsg[2].textContent ="";
   }
-
 return isvalidTrue;
 }
