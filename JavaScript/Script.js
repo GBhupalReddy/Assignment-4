@@ -71,7 +71,7 @@ function store(){
     {
       for(i=0;i<details.length;i++){
         if(details[i].email==email){
-          errorMsg[2].textContent= "email allready exist";
+          errorMsg[2].textContent= "* email allready exist";
           event.preventDefault();
             return false;
         }
@@ -118,7 +118,7 @@ function update(index) {
       for(i=0;i<details.length;i++){
         if(index != i){
         if(details[i].email==email){
-          errorMsg[2].textContent= "email allready exist";
+          errorMsg[2].textContent= "* email allready exist";
           event.preventDefault();
             return false;
         }
@@ -137,22 +137,22 @@ function validate(){
     //First Name Validation
   if (name.value == "")
   {
-    errorMsg[0].textContent = "*FirstName can't be empty";
+    errorMsg[0].textContent = "* FirstName can't be empty";
     return false;
   }
   if(!(name.value.match(alphaExp)))
   {
-    errorMsg[0].textContent = "*Name Take only alphabet characters ";
+    errorMsg[0].textContent = "* Name Take only alphabet characters ";
     return false;  
   }
   else if(name.value.length<3)
   {
-    errorMsg[0].textContent = "*Name Must be minimum 3 characters";
+    errorMsg[0].textContent = "* Name Must be minimum 3 characters";
     return false;
   }
   else if(name.value.length>10)
   {
-    errorMsg[0].textContent = "*Name Must be maximum 10 characters";
+    errorMsg[0].textContent = "* Name Must be maximum 10 characters";
     return false;
   }
   else{
@@ -161,22 +161,22 @@ function validate(){
  //SurName Validation
   if (surname.value == "")
   {
-    errorMsg[1].textContent = "*Surname can't be empty";
+    errorMsg[1].textContent = "* Surname can't be empty";
     return false;
   }
   if(!(surname.value.match(alphaExp)))
   {
-    errorMsg[1].textContent = "*SurName Take only alphabet characters ";
+    errorMsg[1].textContent = "* SurName Take only alphabet characters ";
     return false;  
   }
   else if(surname.value.length<3)
   {
-    errorMsg[1].textContent = "*SurName Must be minimum 3 characters";
+    errorMsg[1].textContent = "* SurName Must be minimum 3 characters";
     return false;
   }
   else if(surname.value.length>10)
   {
-    errorMsg[1].textContent = "*SurName Must be maximum 10 characters";
+    errorMsg[1].textContent = "* SurName Must be maximum 10 characters";
     return false;
   }
   else{
@@ -185,12 +185,12 @@ function validate(){
  //Email Validation 
   if (email.value == "")
   {
-    errorMsg[2].textContent = "*Email can't be empty";
+    errorMsg[2].textContent = "* Email can't be empty";
     return false;
   }
   else if((!(email.value).endsWith("@gmail.com")) && (!(email.value).endsWith("@qualminds.com")))
   {
-    errorMsg[2].textContent = "*allow only gmail and qualminds emails";
+    errorMsg[2].textContent = "* allow only gmail and qualminds emails";
     return false;  
   }
   else{
